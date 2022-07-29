@@ -54,6 +54,16 @@ const mirrored = require('@unicode/unicode-6.1.0/Bidi_Mirroring_Glyph').get(0xAB
 Other than categories, data on Unicode properties, blocks, scripts, and script extensions is available too (for recent versions of the Unicode standard). Here’s the full list of the available data for v6.1.0:
 
 ```js
+// `Names`:
+
+require('@unicode/unicode-6.1.0/Names/index.js'); // array of canonical names
+require('@unicode/unicode-6.1.0/Names/Abbreviation/index.js'); // lookup map from code point to aliases
+require('@unicode/unicode-6.1.0/Names/Alternate/index.js'); // lookup map from code point to aliases
+require('@unicode/unicode-6.1.0/Names/Control/index.js'); // lookup map from code point to aliases
+require('@unicode/unicode-6.1.0/Names/Correction/index.js'); // lookup map from code point to aliases
+require('@unicode/unicode-6.1.0/Names/Figment/index.js'); // lookup map from code point to aliases
+
+
 // `Binary_Property`:
 
 require('@unicode/unicode-6.1.0/Binary_Property/ASCII/code-points.js');
